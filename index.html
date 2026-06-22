@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurora Pro — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Aurora Pro iOS app.">
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 0;
+    background: #08090f; color: #d7dce5;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  h1 { font-size: 28px; margin: 0 0 4px; color: #fff; }
+  h2 { font-size: 18px; margin: 34px 0 8px; color: #8fd9c0; }
+  h3 { font-size: 15px; margin: 20px 0 4px; color: #cfeede; }
+  .updated { color: #7f8794; font-size: 13px; margin-bottom: 24px; }
+  a { color: #8fd9c0; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  strong { color: #fff; }
+  .note { color: #7f8794; font-size: 13px; border-top: 1px solid #1c2130; margin-top: 40px; padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Aurora Pro — Privacy Policy</h1>
+  <p class="updated">Last updated: 22 June 2026</p>
+
+  <p>Aurora Pro (“the app”) is a northern-lights forecasting app. We designed it to be
+  <strong>privacy-preserving by default</strong>: there are no accounts, no analytics, no advertising,
+  and no tracking. This policy explains what data the app uses and why.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li><strong>We do not collect personal information for our own use.</strong> The app has no user accounts and no analytics SDK.</li>
+    <li><strong>We do not track you</strong> across apps or websites, and we do not sell or share data with data brokers.</li>
+    <li>The only data leaving your device is (a) your location sent to <strong>Apple WeatherKit</strong> to fetch local cloud cover, (b) a <strong>coarse region code</strong> used to deliver optional aurora alerts, and (c) your device’s <strong>push token</strong> registered with Firebase Cloud Messaging.</li>
+  </ul>
+
+  <h2>Information the app uses</h2>
+
+  <h3>Location</h3>
+  <ul>
+    <li><strong>On-device forecast.</strong> Your precise location is used on your device to compute whether the aurora is visible where you are (sun/darkness, your geomagnetic latitude, light pollution).</li>
+    <li><strong>Cloud forecast (Apple WeatherKit).</strong> To show cloud cover, your location is sent to Apple’s WeatherKit service, governed by Apple’s privacy policy.</li>
+    <li><strong>Optional aurora alerts.</strong> If you enable alerts, your location is converted <strong>on your device</strong> into a coarse geographic region (roughly a 5°-latitude × 15°-longitude band), and only that region code is used to subscribe you to a notification topic. <strong>Your precise coordinates are never uploaded to our servers.</strong></li>
+    <li>Location access uses the “While Using the App” permission and can be revoked at any time in iOS Settings.</li>
+  </ul>
+
+  <h3>Push notification token</h3>
+  <ul>
+    <li>If you enable alerts, the app registers a <strong>push token</strong> with Firebase Cloud Messaging (a Google service) so your device can receive aurora notifications for your region’s topic. The token identifies the device, not you. We do not store it on our own servers or link it to your identity.</li>
+  </ul>
+
+  <h3>Purchases</h3>
+  <ul>
+    <li>Pro features are unlocked by a one-time in-app purchase, processed entirely by <strong>Apple</strong>. We never see or store your payment details; validation happens through Apple’s StoreKit.</li>
+  </ul>
+
+  <h3>Data we do <em>not</em> collect</h3>
+  <ul>
+    <li>No name, email, contacts, photos, or account.</li>
+    <li>No advertising identifiers, no usage analytics, no crash analytics tied to you.</li>
+  </ul>
+
+  <h2>Third-party data sources</h2>
+  <p>Aurora Pro displays public space-weather and weather data from: <strong>NOAA Space Weather Prediction Center</strong>,
+  <strong>NASA (CCMC/DONKI)</strong>, the <strong>GFZ Helmholtz Centre for Geosciences</strong> (Hp30 index, CC BY 4.0),
+  and <strong>Apple WeatherKit</strong>. Fetching these feeds sends standard network requests (e.g. your IP address) to those
+  providers, governed by their respective policies.</p>
+
+  <h2>Data retention</h2>
+  <p>We do not maintain a user database. Region notification subscriptions are anonymous topic subscriptions and contain no
+  personal data. Cached forecast data lives only on your device.</p>
+
+  <h2>Children</h2>
+  <p>Aurora Pro is not directed at children and does not knowingly collect data from children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy; material changes will be reflected by the “Last updated” date above.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:CONTACT_EMAIL_PLACEHOLDER">CONTACT_EMAIL_PLACEHOLDER</a></p>
+
+  <p class="note">Aurora Pro is an independent app and is not affiliated with NOAA, NASA, GFZ, or Apple.</p>
+</main>
+</body>
+</html>
