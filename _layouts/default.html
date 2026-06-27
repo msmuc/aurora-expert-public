@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 0;
+    background: #08090f; color: #d7dce5;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  h1 { font-size: 28px; margin: 0 0 16px; color: #fff; }
+  h2 { font-size: 18px; margin: 34px 0 8px; color: #8fd9c0; }
+  h3 { font-size: 15px; margin: 20px 0 4px; color: #cfeede; }
+  p, li { font-size: 16px; }
+  a { color: #8fd9c0; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  strong { color: #fff; }
+  hr { border: none; border-top: 1px solid #1c2130; margin: 40px 0 16px; }
+  blockquote {
+    background: #0e1018; border: 1px solid #1c2130; border-radius: 12px;
+    padding: 2px 18px; margin: 22px 0; color: #d7dce5;
+  }
+  .muted { color: #7f8794; font-size: 13px; }
+  nav.top { font-size: 13px; margin-bottom: 24px; }
+  nav.top a { margin-right: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <nav class="top">
+    <a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a>
+    <a href="{{ '/support.html' | relative_url }}">Support</a>
+  </nav>
+  {{ content }}
+</main>
+</body>
+</html>
