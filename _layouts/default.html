@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,6 +35,7 @@
 <main>
   <nav class="top">
     <a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a>
+    <a href="{{ '/privacy-de.html' | relative_url }}">Datenschutz</a>
     <a href="{{ '/support.html' | relative_url }}">Support</a>
   </nav>
   {{ content }}
